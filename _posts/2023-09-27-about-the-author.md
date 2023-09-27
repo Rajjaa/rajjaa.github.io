@@ -4,7 +4,7 @@ title: "About Rajjaa"
 author: "Rajjaa"
 categories: facts
 tags: [documentation]
-image: cuba-2.jpg
+image: capri.jpeg
 ---
 
 About Me
