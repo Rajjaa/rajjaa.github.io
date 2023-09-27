@@ -3,7 +3,7 @@ layout: post
 title: "About Rajjaa"
 author: "Rajjaa"
 categories: facts
-tags: [sample]
+tags: [documentation]
 image: cuba-2.jpg
 ---
 
