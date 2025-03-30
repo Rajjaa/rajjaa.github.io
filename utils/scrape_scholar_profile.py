@@ -3,7 +3,7 @@ import json
 
 def extract_publications_scholarly(scholar_id):
     """
-    Extracts publications from a Google Scholar profile using scholarly.
+    Extracts publications from a Google Scholar profile using scholarly, including PDF URL and conference/workshop name.
 
     Args:
         scholar_id (str): The Google Scholar ID of the author.
@@ -19,17 +19,21 @@ def extract_publications_scholarly(scholar_id):
 
         results = []
         for pub in publications:
-            pub = scholarly.fill(pub) #fill the publication object, to get the abstract.
+            pub = scholarly.fill(pub)  # fill the publication object, to get the abstract.
             title = pub['bib'].get('title', 'N/A')
             authors = pub['bib'].get('author', 'N/A')
             year = pub['bib'].get('pub_year', 'N/A')
             abstract = pub['bib'].get('abstract', 'N/A')
+            pdf_url = pub.get('eprint_url', 'N/A')
+            conference = pub['bib'].get('conference', pub['bib'].get('journal', 'N/A')) #try conference first, then journal.
 
             results.append({
                 "title": title,
                 "authors": authors,
                 "year": year,
-                "abstract": abstract
+                "abstract": abstract,
+                "pdf_url": pdf_url,
+                "conference": conference
             })
 
         return results
@@ -39,7 +43,7 @@ def extract_publications_scholarly(scholar_id):
         return []
 
 # Example usage
-scholar_id = "Ooigad8AAAAJ" # Replace with your Google Scholar ID
+scholar_id = "Ooigad8AAAAJ"  # Replace with your Google Scholar ID
 publications_data = extract_publications_scholarly(scholar_id)
 
 if publications_data:
