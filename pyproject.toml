@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "rajjaa.github.io"
+version = "0.1.0"
+description = ""
+authors = ["Rajjaa <elhamdani.rajaa@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+scholarly = "^1.7.11"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
