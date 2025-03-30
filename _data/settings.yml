@@ -9,6 +9,7 @@ google-ID: ''
 menu:
 - {name: 'Interesting Facts',  url: 'facts'}
 - {name: 'Research',        url: 'research'}
+- {name: 'Projects',           url: 'projects'}
 - {name: 'About',              url: 'about'}
 - {name: 'Contact',            url: 'contact'}
 
