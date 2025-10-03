@@ -8,11 +8,11 @@ permalink: /research/
 
 ### Title
 
-Language Models for Knowledge Extraction: From Non-Parametric Memory to Parametric Memory
+Measuring Parametric Knowledge in Large Language Models: Datasets, Benchmarks, and Decoding Protocols
 
 ### Summary
 
-This research focuses on utilizing large language models (LLMs) for the task of knowledge extraction, addressing two distinct approaches: knowledge extraction from documents and treating LLMs themselves as knowledge bases. While factual accuracy is a significant concern, the core of the work lies in effectively extracting knowledge and ensuring its reliability. The evaluation of accuracy plays a central role, with an emphasis on assessing the performance of LLMs in specific domains and for certain relations. This research aims not only to improve the factual accuracy of LLMs but also to develop robust evaluation methodologies to measure their effectiveness in extracting knowledge across various contexts.
+Large Language Models (LLMs) exhibit an emergent ability to store and retrieve factual knowledge, motivating their study as Language Models as Knowledge Bases (LM-as-KB). Yet, their practical deployment is hindered by unreliable evaluation metrics, poor calibration, and ambiguity in free-form generation. This thesis addresses these limitations through a three-part empirical investigation. First, we construct novel benchmark datasets—CASE (law), MUSART (multi-domain), and YAGO-QA (high-quality subsets)—to provide scalable and diverse ground truth for factuality evaluation. Second, we conduct large-scale experiments mapping the factual recall of LLMs across domains, model scales, and prompting strategies, revealing that standard exact-match metrics systematically underestimate knowledge and that factual performance is highly domain-dependent. Third, we analyze model calibration, demonstrating that verbalized confidence yields more reliable uncertainty estimates than token probabilities and enables selective question answering to trade coverage for accuracy. Finally, to overcome the ambiguities of free-form generation, we introduce Retrieval-Constrained Decoding (RCD), a novel evaluation protocol that constrains model output to a set of valid candidate entities. Collectively, these contributions provide a more complete and trustworthy understanding of the capabilities and limitations of modern LMs as knowledge repositories, offering a comprehensive framework for mapping, measuring, and managing the uncertainty of their knowledge.
 
 ## Publications
 
