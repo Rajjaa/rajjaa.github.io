@@ -1,5 +1,20 @@
 [
     {
+        "title": "Retrieval-Constrained Decoding Reveals Underestimated Parametric Knowledge in Language Models",
+        "authors": "Rajaa El Hamdani, Samy Haffoudhi, Nils Holzenberger, Fabian Suchanek, Thomas Bonald, Fragkiskos D. Malliaros",
+        "year": 2025,
+        "abstract": "Language models (LMs) encode substantial factual knowledge, but often produce answers judged as incorrect. We hypothesize that many of these answers are actually correct, but are expressed in alternative surface forms that are dismissed due to an overly strict evaluation, leading to an underestimation of models' parametric knowledge. We propose Retrieval-Constrained Decoding (RCD), a decoding strategy that restricts model outputs to unique surface forms. We introduce YAGO-QA, a dataset of 19,137 general knowledge questions. Evaluating open-source LMs from 135M to 70B parameters, we show that standard decoding undervalues their knowledge. For instance, Llama-3.1-70B scores only 32.3% F1 with vanilla decoding but 46.0% with RCD. Similarly, Llama-3.1-8B reaches 33.0% with RCD, outperforming the larger model under vanilla decoding. We publicly share the code and dataset at this https URL.",
+        "pdf_url": "https://www.arxiv.org/abs/2509.23417"
+    },
+    {
+        "title": "The Factuality of Large Language Models in the Legal Domain",
+        "authors": "Rajaa El Hamdani and Thomas Bonald and Fragkiskos D Malliaros and Nils Holzenberger and Fabian Suchanek",
+        "year": 2024,
+        "abstract": "This paper investigates the factuality of large language models (LLMs) as knowledge bases in the legal domain, in a realistic usage scenario: we allow for acceptable variations in the answer, and let the model abstain from answering when uncertain. First, we design a dataset of diverse factual questions about case law and legislation. We then use the dataset to evaluate several LLMs under different evaluation methods, including exact, alias, and fuzzy matching. Our results show that the performance improves significantly under the alias and fuzzy matching methods. Further, we explore the impact of abstaining and in-context examples, finding that both strategies enhance precision. Finally, we demonstrate that additional pre-training on legal documents, as seen with SaulLM, further improves factual precision from 63% to 81%.",
+        "pdf_url": "https://dl.acm.org/doi/abs/10.1145/3627673.3679961",
+        "conference": "CIKM '24: Proceedings of the 33rd ACM International Conference on Information and Knowledge Management"
+    },
+    {
         "title": "A combined rule-based and machine learning approach for automated GDPR compliance checking",
         "authors": "Rajaa El Hamdani and Majd Mustapha and David Restrepo Amariles and Aurore Troussel and Sébastien Meeùs and Katsiaryna Krasnashchok",
         "year": 2021,
@@ -24,14 +39,6 @@
         "conference": "ICAIL '21: Proceedings of the Eighteenth International Conference on Artificial Intelligence and Law"
     },
     {
-        "title": "Performance in the courtroom: Automated processing and visualization of appeal court decisions in france",
-        "authors": "Paul Boniol and George Panagopoulos and Christos Xypolopoulos and Rajaa El Hamdani and David Restrepo Amariles and Michalis Vazirgiannis",
-        "year": 2020,
-        "abstract": "Artificial Intelligence techniques are already popular and important in the legal domain. We extract legal indicators from judicial judgment to decrease the asymmetry of information of the legal system and the access-to-justice gap. We use NLP methods to extract interesting entities/data from judgments to construct networks of lawyers and judgments. We propose metrics to rank lawyers based on their experience, wins/loss ratio and their importance in the network of lawyers. We also perform community detection in the network of judgments and propose metrics to represent the difficulty of cases capitalising on communities features.",
-        "pdf_url": "https://arxiv.org/abs/2006.06251",
-        "conference": "NLLP @ KDD 2020"
-    },
-    {
         "title": "Computational Indicators in the Legal Profession: Can Artificial Intelligence Measure Lawyers' Performance?",
         "authors": "David Restrepo Amariles and Pablo Marcello Baquero and Paul Boniol and Rajaa El Hamdani and Michalis Vazirgiannis",
         "year": 2021,
@@ -40,19 +47,19 @@
         "conference": "U. Ill. JL Tech. & Pol'y"
     },
     {
+        "title": "Performance in the courtroom: Automated processing and visualization of appeal court decisions in france",
+        "authors": "Paul Boniol and George Panagopoulos and Christos Xypolopoulos and Rajaa El Hamdani and David Restrepo Amariles and Michalis Vazirgiannis",
+        "year": 2020,
+        "abstract": "Artificial Intelligence techniques are already popular and important in the legal domain. We extract legal indicators from judicial judgment to decrease the asymmetry of information of the legal system and the access-to-justice gap. We use NLP methods to extract interesting entities/data from judgments to construct networks of lawyers and judgments. We propose metrics to rank lawyers based on their experience, wins/loss ratio and their importance in the network of lawyers. We also perform community detection in the network of judgments and propose metrics to represent the difficulty of cases capitalising on communities features.",
+        "pdf_url": "https://arxiv.org/abs/2006.06251",
+        "conference": "NLLP @ KDD 2020"
+    },
+    {
         "title": "Compliance generation for privacy documents under GDPR: A roadmap for implementing automation and machine learning",
         "authors": "David Restrepo Amariles and Aurore Clément Troussel and Rajaa El Hamdani",
         "year": 2020,
         "abstract": "Most prominent research today addresses compliance with data protection laws through consumer-centric and public-regulatory approaches. We shift this perspective with the Privatech project to focus on corporations and law firms as agents of compliance. To comply with data protection laws, data processors must implement accountability measures to assess and document compliance in relation to both privacy documents and privacy practices. In this paper, we survey, on the one hand, current research on GDPR automation, and on the other hand, the operational challenges corporations face to comply with GDPR, and that may benefit from new forms of automation. We attempt to bridge the gap. We provide a roadmap for compliance assessment and generation by identifying compliance issues, breaking them down into tasks that can be addressed through machine learning and automation, and providing notes about related developments in the Privatech project.",
         "pdf_url": "N/A",
         "conference": "arXiv preprint arXiv:2012.12718"
-    },
-    {
-        "title": "The Factuality of Large Language Models in the Legal Domain",
-        "authors": "Rajaa El Hamdani and Thomas Bonald and Fragkiskos D Malliaros and Nils Holzenberger and Fabian Suchanek",
-        "year": 2024,
-        "abstract": "This paper investigates the factuality of large language models (LLMs) as knowledge bases in the legal domain, in a realistic usage scenario: we allow for acceptable variations in the answer, and let the model abstain from answering when uncertain. First, we design a dataset of diverse factual questions about case law and legislation. We then use the dataset to evaluate several LLMs under different evaluation methods, including exact, alias, and fuzzy matching. Our results show that the performance improves significantly under the alias and fuzzy matching methods. Further, we explore the impact of abstaining and in-context examples, finding that both strategies enhance precision. Finally, we demonstrate that additional pre-training on legal documents, as seen with SaulLM, further improves factual precision from 63% to 81%.",
-        "pdf_url": "https://dl.acm.org/doi/abs/10.1145/3627673.3679961",
-        "conference": "CIKM '24: Proceedings of the 33rd ACM International Conference on Information and Knowledge Management"
     }
 ]
